@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador de Textos</title>
+
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main class="Decodificador">
+        <div class="menu">
+            <img src="./assets/alura.png">
+        </div>
+        
+
+        <section>
+            
+            <textarea id="input-text" class="Decodificador__conteudo__textarea" name="texto" id="texto" cols="30" rows="10">Digite seu Texto</textarea>
+            <div class="Decodificador__conteudo__alerta">
+                <img class="Decodificador__conteudo__alerta__exclamacao" src="./assets/excalmacao.png">
+                <p>apenas letras minuscas e sem acento.</p>
+            </div>
+            <div class="Decodificador__conteudo__botao">
+                <button onclick="substituirDiv() ; btnCriptofrafar()" class="Decodificador__conteudo__botao__criptografar" href="">Criptografar</button>
+                <button onclick="substituirDiv() ; btnDescriptofrafar()" class="Decodificador__conteudo__botao__descriptografar" href="">Descriptografar</button>
+            </div>
+            </section>
+        <section class="Decodificador__conteudo__resultado">
+            <div id = "div-aparece">
+                <div class="div-resultado-texto"><p id="input-mensagem" class="input-mensagem"></p></div>
+                
+                <button onclick="copiarTexto()" id="copiar" class="Decodificador__conteudo__botao__descriptografar">Copiar</button>
+            </div> 
+            <div id = "div-resultado">
+                <img class="Decodificador__conteudo__resultado__img" src="./assets/lupa.png">
+                <p class="Decodificador__conteudo__resultado__mensagem">Nenhuma Mensagem Encontrada</p>
+                <p class="Decodificador__conteudo__resultado__digite">Digite um texto que voce deseja Criptografar ou Descriptografar</p>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Alex Almeida.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

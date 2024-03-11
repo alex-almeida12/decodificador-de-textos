@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-background: #f3f5fc;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: #495057;
+    --cor-quartenaria: #ffffff;
+    --cor-hover: #D8DFE8;
+    --cor-resultado: #343A40;
+
+    --fonte-primaria: "Inter", sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    padding: 1% 0 0 1%;
+
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor-background) ;
+}
+
+.Decodificador{
+    
+    display: flex;
+    padding: 1.5% 1.5%;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+.Decodificador__conteudo__textarea{
+    resize: none;
+    border-style: none;
+    background: none;
+    width: 640px;
+    margin-top: 10%;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+}
+
+
+
+.Decodificador__conteudo__alerta{
+    display: flex;
+    padding: 5.5rem 0 1rem 0;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    gap: 1rem;
+}
+
+.Decodificador__conteudo__alerta__exclamacao{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.Decodificador__conteudo__botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+button{
+    border: none;
+}
+.Decodificador__conteudo__botao__criptografar{
+    text-decoration: none;
+    width: 20.5rem;
+    padding: 1.5rem 0;
+    background: var(--cor-secundaria);
+    border-radius: 1.5rem;
+    text-align: center;
+    color: var(--cor-quartenaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.Decodificador__conteudo__botao__descriptografar{
+    text-decoration: none;
+    width: 20.5rem;
+    padding: 1.5rem 0;
+    background: var(--cor-hover);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--cor-secundaria);
+    border-radius: 1.5rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.Decodificador__conteudo__resultado{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-quartenaria);
+    border-radius: 32px;
+    width: 25rem;
+    height: 35rem;
+    padding: 1rem;
+}
+
+.Decodificador__conteudo__resultado__img{
+    padding: 10%;
+
+}
+.Decodificador__conteudo__resultado__mensagem{
+
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--cor-resultado);
+    padding: 1rem;
+}
+
+.Decodificador__conteudo__resultado__digite{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+#div-aparece {
+    display: none;
+    text-align: center;
+}
+
+.div-resultado-texto{
+    width: 100%;
+    height: 28.12rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1%;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+}
+
+.div-mensagem{
+    resize: none;
+    border-style: none;
+    background: none;
+    width: 100%;
+    height: auto;
+}
+
+.rodape{
+    margin-top: 3rem;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    padding: 2rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-quartenaria);
+}
+
+@media (max-width: 1100px){
+
+  
+
+    .Decodificador{
+        padding: 8%;
+        flex-direction: column;
+        
+    }
+    
+    .Decodificador__conteudo{
+        padding: 0 6%;
+    }
+    .Decodificador__conteudo__resultado{
+        width: 76%;
+        margin-left: 6%;
+    }
+
+    .Decodificador__conteudo__botao__criptografar{
+        width: 20.5rem;
+    }
+
+    .Decodificador__conteudo__botao__descriptografar{
+        width: 20.5rem;
+    }
+
+    .Decodificador__conteudo__resultado__img{
+        display: none;
+    }
+    
+    }
+
+    @media (max-width: 700px){
+
+        .Decodificador{
+            padding: 8%;
+            flex-direction: column;
+        }
+
+        .Decodificador__conteudo{
+            padding: 0 11%;
+        }
+        
+        .Decodificador__conteudo__botao{
+            flex-direction: column;
+            width: auto;
+        }
+
+        .Decodificador__conteudo__alerta{
+         
+            font-size: 0.75rem;
+    
+        }
+
+        .Decodificador__conteudo__alerta__exclamacao{
+            height: 0.75rem;
+            width: 0.75rem;
+        }
+        .Decodificador__conteudo__resultado{
+            margin-left: 11%;
+            width: 75%;
+        }
+        .Decodificador__conteudo__resultado__img{
+            display: none;
+        }
+        
+        }
